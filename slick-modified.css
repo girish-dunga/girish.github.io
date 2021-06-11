@@ -1,0 +1,122 @@
+.slick-slide {
+  max-width: 100%;
+  overflow: hidden;
+  text-align: center;
+  display: flex !important;
+  justify-content: center;
+}
+.slick-slide img {
+  display: inline-block;
+  max-width: 80%;
+  max-height: 100%;
+}
+.slick-track {
+  margin: 0 auto;
+}
+.slick-prev,
+.slick-next {
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  line-height: 29px;
+  z-index: 9999;
+}
+/* .slick-prev:before,
+.slick-next:before {
+  content: "";
+} */
+.slick-prev:before {
+  content: "";
+  height: 30px;
+  width: 30px;
+  background: url(/leftArrow.svg) no-repeat center left;
+  position: absolute;
+  left: 10px;
+}
+.slick-next:before {
+  content: "";
+  height: 30px;
+  width: 30px;
+  background: url(/rightArrow.svg) no-repeat center right;
+  position: absolute;
+  right: 10px;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  color: #d3d3d3;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  line-height: 29px;
+}
+.slick-prev {
+  left: 0;
+  text-align: right;
+}
+.slick-next {
+  right: 0;
+  text-align: left;
+}
+
+.modal-other-works-slider .slick-list.draggable {
+  width: 90%;
+  margin-left: 5%;
+}
+.modal-other-works-slider .slick-slide {
+  max-height: 180px;
+}
+.modal-other-works-slider .slick-slide a {
+  /* background: #23252b; */
+  margin: 5px;
+}
+.modal-other-works-slider .slick-prev,
+.modal-other-works-slider .slick-next,
+.modal-other-works-slider .slick-prev:hover,
+.modal-other-works-slider .slick-prev:focus,
+.modal-other-works-slider .slick-next:hover,
+.modal-other-works-slider .slick-next:focus {
+  color: transparent;
+  font-size: 0;
+}
+.modal-other-works-slider .slick-prev:before {
+  left: 20px;
+}
+.modal-other-works-slider .slick-next:before {
+  right: 20px;
+}
+/* .modal-other-works-container .slick-list.draggable {
+  padding: 0 60px;
+} */
+/* .modal-other-works-slider .slick-prev,
+.modal-other-works-slider .slick-next {
+  font-size: 0;
+  line-height: 0;
+} */
+.modal-card-body .slick-slide img {
+  max-width: 100%;
+}
+.modal-card-content {
+  width: 80%;
+}
+@media (min-width: 1366px) {
+  .modal-card-body .slick-prev {
+    left: -80px;
+  }
+  .modal-card-body .slick-next {
+    right: -80px;
+  }
+}
+@media (max-width: 1365px) {
+  .modal-card-content {
+    max-width: 80%;
+  }
+  .modal-card-body .slick-prev {
+    left: -70px;
+  }
+  .modal-card-body .slick-next {
+    right: -70px;
+  }
+}
